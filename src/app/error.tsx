@@ -1,6 +1,7 @@
-'use client' // Error components must be Client components
+"use client"; // Error components must be Client components
 
-import { useEffect } from 'react'
+import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Error({
   error,
@@ -11,7 +12,7 @@ export default function Error({
 }): JSX.Element {
   useEffect(() => {
     // Log the error to an error reporting service
-  }, [error])
+  }, [error]);
 
   return (
     <div>
@@ -25,5 +26,5 @@ export default function Error({
         Try again
       </button>
     </div>
-  )
+  );
 }

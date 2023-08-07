@@ -20,20 +20,17 @@ const AuthProvider: React.FC<IAuthProviderProps> = ({ children }) => {
   const expirationDate = timestampToDate(expiresIn || 0);
   const currentDate = timestampToDate(getCurrentTimestamp());
 
-
-  if (expiresIn && currentDate > expirationDate) {
+  if (currentDate > expirationDate) {
     dispatch(doLogout());
   }
 
   useEffect(() => {
     const baseUrl = pathname.split("/")[1];
 
-    console.log(baseUrl)
-    if (!isLogged && baseUrl !== "auth") {
-      console.log('ssss')
-      router.push("/auth/login");
-    } else {
+    if (isLogged) {
       router.push("/dashboard/home");
+    } else {
+      router.push("/auth/login");
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps

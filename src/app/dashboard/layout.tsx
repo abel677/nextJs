@@ -1,9 +1,9 @@
 "use client";
 
 import { ReactNode } from "react";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { ContainerAuthFormsStyles } from "../auth/styles";
+import { ToastContainer } from "react-toastify";
+
+import { ContainerDashboardStyles } from "./styles";
 
 interface IDashboardLayoutProps {
   children: ReactNode;
@@ -12,7 +12,7 @@ interface IDashboardLayoutProps {
 const DashboardLayout: React.FC<IDashboardLayoutProps> = ({ children }) => {
   return (
     <>
-      <ContainerAuthFormsStyles>{children}</ContainerAuthFormsStyles>
+      <ContainerDashboardStyles>{children}</ContainerDashboardStyles>
       <ToastContainer />
     </>
   );

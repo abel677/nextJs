@@ -1,14 +1,9 @@
 "use client";
 
 import asyncComponent from "@/app/utils/asyncComponent";
-import { Box } from "@mui/material";
 
-const HomePage = asyncComponent(
-  () => import("../../components/dashboard/Home")
-);
+const Home = asyncComponent(() => import("../../components/dashboard/Home"));
 
-export default function LoginPage() {
-  return (
-    <HomePage />
-  )
+export default function HomePage() {
+  return <Home />;
 }

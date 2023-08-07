@@ -38,6 +38,7 @@
     "redux-thunk": "^2.4.2",
     "stylis-plugin-rtl": "^2.1.1",
     "typescript": "5.1.6",
+    "yarn": "^1.22.19",
     "yup": "^1.2.0"
   }
 }

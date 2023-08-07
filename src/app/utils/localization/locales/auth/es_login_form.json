@@ -1,0 +1,9 @@
+{
+  "login.form.email": "Email",
+  "login.form.email.placeholder": "Ejemplo: user@gmail.com",
+  "login.form.password": "Contraseña",
+  "login.form.password.placeholder": "Ejemplo: xxxxxxxx",
+  "login.form.forgetPassword": "¿Olvido su contraseña?",
+  "login.form.loginButton": "Iniciar sesión",
+  "login.form.errorEmailOrPass": "El email o la contraseña son incorrectos."
+}

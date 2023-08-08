@@ -75,6 +75,7 @@ export default function Profile() {
         >
           <MenuItem onClick={onLogout}>Cerrar Sesiòn</MenuItem>
         </Menu>
+        
         <CardContent>{`Bienvenido ${userLogged?.name}`}</CardContent>
       </Card>
     </Box>

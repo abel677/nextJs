@@ -44,7 +44,6 @@ export const useSubmitLogin = (): ILoginHook => {
       );
     }
 
-    console.log(tokenData);
   };
 
   return {

@@ -43,7 +43,6 @@ export const useSubmitLogin = (): ILoginHook => {
         })
       );
     }
-
   };
 
   return {
